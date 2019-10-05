@@ -1,11 +1,14 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
+import utility.Browser;
 import utility.GeneralChecks;
 
 public class PageCheckout {
@@ -33,6 +36,15 @@ public class PageCheckout {
 	@FindBy(how = How.XPATH,using = "//select[@id='ideliverytime']")
 	private WebElement dropdownboxDeliveryTime;
 	
+	@FindBy(how = How.XPATH,using = "//select[@id='ipayswith']")
+	private WebElement dropdownboxYouPayWith;
+	
+	@FindBy(how = How.XPATH,using = "//select[@id='ipayswith']//option[@class='pulldown']")
+	private List<WebElement> webElementListAllPayswith;
+	
+	@FindBy(how = How.XPATH,using = "//span[@class='cart-sum-price']")
+	private WebElement labelCartTotal;
+	
 	@FindBy(how = How.XPATH,using = "//body")
 	private WebElement webElementBody;
 
@@ -59,12 +71,40 @@ public class PageCheckout {
 	public void selectDeliveryTime(String selectItem) {
 		webElementBody.sendKeys(Keys.PAGE_DOWN);
 		Select drop = new Select(dropdownboxDeliveryTime);
-		//drop.selectByIndex(2);
 		drop.selectByVisibleText(selectItem);
-		//System.out.println(dropdownboxDeliveryTime.getAllSelectedOptions());
-		//dropdownboxDeliveryTime.getAllSelectedOptions();
-		//dropdownboxDeliveryTime.selectByVisibleText(selectItem);
 		
+	}
+
+	public void selectPayAmountClosestToOrderPrice() {
+		webElementBody.sendKeys(Keys.PAGE_DOWN);
+		Select drop = new Select(dropdownboxYouPayWith);
+		
+		int payv = removeCurrencyAndDecimalsAndConvertToInt(labelCartTotal.getText().trim());
+		int closestValue = 0;
+		for (int i = 1; i < webElementListAllPayswith.size(); i++) {
+			
+    		int intPayAmount = removeCurrencyAndDecimalsAndConvertToInt(webElementListAllPayswith.get(i).getText());
+    		
+				  if (i==1) {
+					  closestValue=Math.abs(intPayAmount-payv);
+					  drop.selectByIndex(i);
+				  }
+				  else if (Math.abs(intPayAmount-payv)<closestValue) {
+					  closestValue=Math.abs(intPayAmount-payv);
+					  drop.selectByIndex(i);  
+				  }
+		}                 
+		
+	}
+
+	private int removeCurrencyAndDecimalsAndConvertToInt(String convertValue) {
+		//Remove Currency Symbol in front of pay amount
+		convertValue = convertValue.substring(1).trim();
+		//Remove decimal of pay amount ",00"
+		convertValue = convertValue.substring(0,convertValue.length()-3);
+		//Convert stringPayAmount to integer payAmount
+		int intPayAmount = Integer.parseInt(convertValue);
+		return intPayAmount;
 	}
 
 }
