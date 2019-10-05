@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Browser {
 	
 	private static WebDriver driver;
-	private static int ExplicitWaitTimeOut = 5;
+	private static int ExplicitWaitTimeOut = 2;
 	
 	private  Browser (WebDriver driver){ 
 		Browser.driver = driver;

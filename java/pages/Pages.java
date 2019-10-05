@@ -12,8 +12,14 @@ public class Pages {
 		return page;
 	}
 
-	public static PageOrderFromRestaurants pageOrderFromRestaurants() {
-		PageOrderFromRestaurants page = new PageOrderFromRestaurants();
+	public static PageDisplayRestaurants pageDisplayRestaurants() {
+		PageDisplayRestaurants page = new PageDisplayRestaurants();
+		PageFactory.initElements(Browser.getDriver(), page);
+		return page;
+	}
+
+	public static PageRestaurantMenu pageRestaurantMenu() {
+		PageRestaurantMenu page = new PageRestaurantMenu();
 		PageFactory.initElements(Browser.getDriver(), page);
 		return page;
 	}

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.How;
 
 import utility.Browser;
 import utility.GeneralChecks;
+import utility.GeneralSelects;
 
 public class PageTimeToOrderFood {
 	
@@ -34,19 +35,13 @@ public class PageTimeToOrderFood {
 	}
 
 	private void selectSpecificAddressFromList(String enterSpecificAddress) {
-		Browser.implicitlyWait();
-		int counter = 0;
-	    for ( WebElement i: listMultipleDeliveryAddress) { 
-	        if ( i.getText().trim().equals(enterSpecificAddress  ) ) {
-	        	listMultipleDeliveryAddress.get(counter).click();
-	        	break;
-	       }
-	        counter++; 
-	    }
+		GeneralSelects.selectItemFromWebElementlist(listMultipleDeliveryAddress,enterSpecificAddress);
 	}
 		
 
 	private void selectSuggestedAddressFromList(String addressDetails) {
+		GeneralSelects.selectItemFromWebElementlist(listSuggestionDeliveryAddress, addressDetails, 11);
+		/*
 		Browser.implicitlyWait();
 		int counter = 0;
 	    for ( WebElement i: listSuggestionDeliveryAddress) { 
@@ -55,6 +50,7 @@ public class PageTimeToOrderFood {
 	        	break;
 	       }
 	        counter++; 
-	    }
+	        
+	    }*/
 	}
 }

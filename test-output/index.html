@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\shauncr\AppData\Local\Temp\testng-eclipse--1165824502\testng-customsuite.xml</span>
+                    <span>C:\Users\shauncr\AppData\Local\Temp\testng-eclipse--1975757116\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step1">step1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step1_EnterAddress">step1_EnterAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step2">step2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step2_SearchForRestaurantsNearAddress">step2_SearchForRestaurantsNearAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step3_AddMenuItemsToBasket">step3_AddMenuItemsToBasket</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,16 +135,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="step1">
-                  </a> <!-- step1 -->
-                  <span class="method-name">step1</span>
+                  <a name="step1_EnterAddress">
+                  </a> <!-- step1_EnterAddress -->
+                  <span class="method-name">step1_EnterAddress</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="step2">
-                  </a> <!-- step2 -->
-                  <span class="method-name">step2</span>
+                  <a name="step2_SearchForRestaurantsNearAddress">
+                  </a> <!-- step2_SearchForRestaurantsNearAddress -->
+                  <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_AddMenuItemsToBasket">
+                  </a> <!-- step3_AddMenuItemsToBasket -->
+                  <span class="method-name">step3_AddMenuItemsToBasket</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shauncr\AppData\Local\Temp\testng-eclipse--1165824502\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shauncr\AppData\Local\Temp\testng-eclipse--1975757116\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,20 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'step1')
+data.setCell(0, 1, 'step2_SearchForRestaurantsNearAddress')
 data.setCell(0, 2, 'automationassignment.TestCase1')
-data.setCell(0, 3, 10664);
+data.setCell(0, 3, 14043);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'step2')
+data.setCell(1, 1, 'step3_AddMenuItemsToBasket')
 data.setCell(1, 2, 'automationassignment.TestCase1')
-data.setCell(1, 3, 8209);
+data.setCell(1, 3, 10605);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'step1_EnterAddress')
+data.setCell(2, 2, 'automationassignment.TestCase1')
+data.setCell(2, 3, 10242);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,16 +257,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">step1</span>
-                <span class="method-start">7465 ms</span>
+                <span class="method-name">step1_EnterAddress</span>
+                <span class="method-start">5118 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">step2</span>
-                <span class="method-start">18135 ms</span>
+                <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                <span class="method-start">15366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step3_AddMenuItemsToBasket</span>
+                <span class="method-start">29411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">26346 ms</span>
+                <span class="method-start">40018 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
