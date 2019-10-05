@@ -34,6 +34,12 @@ public class TestCase1 extends Base{
   @Test (dependsOnMethods={"step3_AddItemsToBasket"})
   public void step4_captureDetailsForDelivery() {
 	  
+	  Assert.assertTrue(Pages.pageCheckout().isAt(),"Pages.pageCheckout().isAt() - Page not found !");
+	  Pages.pageCheckout().captureAddressDetails("main street 2415","8888AA","Enschede");
+	  Pages.pageCheckout().capturePersonalDetails("TestUSer","1234567890","testuser@test.test");
+	  //Pages.pageCheckout().selectDeliveryTime("As soon as possible");
+	  Pages.pageCheckout().selectDeliveryTime("16:45");
+	  
   }
   
   

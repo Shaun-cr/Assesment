@@ -12,3 +12,5 @@
 (Right click on your project, then click MAVEN and then click UPDATE)
 7. If you prefer git interface , download plugin egit in Eclipse (egit - http://download.eclipse.org/egit/updates)
 8. To install plugins in Eclipse go to HELP and then INSTALL NEW SOFTWARE
+9. Make sure your webdriver is mapped correthly under the Browser Class
+10. To view test results: click on "test-output" and open index page. Scroll down to under Results and click on "SHOW" next to "passed methods"

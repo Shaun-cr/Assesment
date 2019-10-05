@@ -24,4 +24,10 @@ public class Pages {
 		return page;
 	}
 
+	public static PageCheckout pageCheckout() {
+		PageCheckout page = new PageCheckout();
+		PageFactory.initElements(Browser.getDriver(), page);
+		return page;
+	}
+
 }

@@ -5,9 +5,11 @@
     <classes>
       <class name="automationassignment.TestCase1">
         <methods>
-          <include name="step2"/>
+          <include name="step4_captureDetailsForDelivery"/>
           <include name="openPage"/>
-          <include name="step1"/>
+          <include name="step1_EnterAddress"/>
+          <include name="step2_SearchForRestaurantsNearAddress"/>
+          <include name="step3_AddItemsToBasket"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- automationassignment.TestCase1 -->

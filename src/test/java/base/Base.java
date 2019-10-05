@@ -16,6 +16,6 @@ public class Base {
 
 	 @AfterClass
 	 public static void closeBrowser(){
-		Browser.Close();
+		//Browser.Close();
 	 }
 }
