@@ -36,7 +36,6 @@ public class PageTimeToOrderFood {
 	private void selectSpecificAddressFromList(String enterSpecificAddress) {
 		Browser.implicitlyWait();
 		int counter = 0;
-		System.out.println("enter loop");
 	    for ( WebElement i: listMultipleDeliveryAddress) { 
 	        if ( i.getText().trim().equals(enterSpecificAddress  ) ) {
 	        	listMultipleDeliveryAddress.get(counter).click();
@@ -52,7 +51,6 @@ public class PageTimeToOrderFood {
 		int counter = 0;
 	    for ( WebElement i: listSuggestionDeliveryAddress) { 
 	        if ( i.getText().substring(11).trim().equals(addressDetails  ) ) {
-	        	System.out.println("in if");
 	        	listSuggestionDeliveryAddress.get(counter).click();
 	        	break;
 	       }

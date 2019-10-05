@@ -16,7 +16,7 @@ public class TestCase1 extends Base{
   @Test (dependsOnMethods={"step1"})
   public void step2() {
 	  Assert.assertTrue(Pages.pageOrderFromRestaurants().isAt(),"Pages.pageOrderFromRestaurants().isAt() - Page not found !");
-
+	  Assert.assertTrue(Pages.pageOrderFromRestaurants().isRestaurantsListDisplayed(),"Pages.pageOrderFromRestaurants().isRestaurantsListDisplayed() - Restaurants List looks like it is empty");
 	  
   }
 }

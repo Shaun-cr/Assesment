@@ -2,6 +2,7 @@ package utility;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
@@ -73,7 +74,7 @@ public class Browser {
 
 		} 
 		catch (Exception e) {
-			System.out.println("ExplicitWait failed on this webElement: " + WebElement.getTagName()); 
+			System.out.println("ExplicitWait failed on this webElement: " + WebElement); 
 
 		}
 	}
@@ -81,13 +82,27 @@ public class Browser {
 
 	public static void implicitlyWait() {
 		LocalDateTime now = LocalDateTime.now();
-		LocalDateTime newTime = now.plusSeconds(5);
+		LocalDateTime newTime = now.plusSeconds(2);
 
 			do{
 				now = LocalDateTime.now();
 			}
 			while(now.isBefore(newTime)) ;
 		
+	}
+
+
+	
+	public static void ExplicitWait(List<WebElement> WebListElement){
+		try{
+			Browser.implicitlyWait();
+			(new WebDriverWait(driver,ExplicitWaitTimeOut)).until(ExpectedConditions.visibilityOfAllElements(WebListElement));
+
+		} 
+		catch (Exception e) {
+			System.out.println("ExplicitWait failed on this WebListElement: " + WebListElement); 
+
+		}
 	}
 		
 		
