@@ -11,6 +11,7 @@ public class PageOrderFromRestaurants {
 	private WebElement webElementPageBody;
 
 	public boolean isAt() {
+		//
 		return GeneralChecks.isWebElementDisplayed(webElementPageBody); 
 	}
 
