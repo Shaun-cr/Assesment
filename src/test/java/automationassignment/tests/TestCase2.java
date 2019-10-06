@@ -1,4 +1,4 @@
-package automationassignment;
+package automationassignment.tests;
 
 
 

@@ -1,4 +1,4 @@
-package automationassignment;
+package automationassignment.tests;
 
 import org.testng.Assert;
 import org.testng.Reporter;
