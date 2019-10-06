@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-TestSuite1" class="navigator-link">
+              <span class="suite-name border-failed">TestSuite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\shauncr\AppData\Local\Temp\testng-eclipse--994290246\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-TestSuite1" class="navigator-link ">
+                    <span>C:\Users\shauncr\eclipse-workspace\Assesment\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-TestSuite1" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-TestSuite1" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-TestSuite1" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-TestSuite1" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-TestSuite1" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-TestSuite1" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,134 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">20 methods, 4 failed,  10 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite1" class="hide-methods failed suite-TestSuite1"> (hide)</a> <!-- hide-methods failed suite-TestSuite1 -->
+                      <a href="#" panel-name="suite-TestSuite1" class="show-methods failed suite-TestSuite1"> (show)</a> <!-- show-methods failed suite-TestSuite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2Bonus" class="method navigator-link" hash-for-method="step1_EnterAddress(8888, 8888 Alpha)">step1_EnterAddress(8888, 8888 Alpha)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2" class="method navigator-link" hash-for-method="step2_SearchForRestaurantsNearAddress(QA Restaurant Selenium)">step2_SearchForRestaurantsNearAddress(QA Restaurant Selenium)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1Bonus" class="method navigator-link" hash-for-method="step3_AddItemsToBasket">step3_AddItemsToBasket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step4_CaptureDetailsForDelivery">step4_CaptureDetailsForDelivery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestSuite1" class="hide-methods skipped suite-TestSuite1"> (hide)</a> <!-- hide-methods skipped suite-TestSuite1 -->
+                      <a href="#" panel-name="suite-TestSuite1" class="show-methods skipped suite-TestSuite1"> (show)</a> <!-- show-methods skipped suite-TestSuite1 -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestSuite1">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2Bonus" class="method navigator-link" hash-for-method="step2_SearchForRestaurantsNearAddress">step2_SearchForRestaurantsNearAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2Bonus" class="method navigator-link" hash-for-method="step3_AddItemsToBasket">step3_AddItemsToBasket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2" class="method navigator-link" hash-for-method="step3_AddItemsToBasket">step3_AddItemsToBasket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1Bonus" class="method navigator-link" hash-for-method="step4_CaptureDetailsForDelivery">step4_CaptureDetailsForDelivery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2" class="method navigator-link" hash-for-method="step4_CaptureDetailsForDelivery">step4_CaptureDetailsForDelivery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2Bonus" class="method navigator-link" hash-for-method="step4_CaptureDetailsForDelivery">step4_CaptureDetailsForDelivery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1Bonus" class="method navigator-link" hash-for-method="step5_ReceiveOrderReference">step5_ReceiveOrderReference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step5_ReceiveOrderReference">step5_ReceiveOrderReference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2" class="method navigator-link" hash-for-method="step5_ReceiveOrderReference">step5_ReceiveOrderReference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2Bonus" class="method navigator-link" hash-for-method="step5_ReceiveOrderReference">step5_ReceiveOrderReference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestSuite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-TestSuite1" class="hide-methods passed suite-TestSuite1"> (hide)</a> <!-- hide-methods passed suite-TestSuite1 -->
+                      <a href="#" panel-name="suite-TestSuite1" class="show-methods passed suite-TestSuite1"> (show)</a> <!-- show-methods passed suite-TestSuite1 -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-TestSuite1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="automationassignment.TestCase3" class="method navigator-link" hash-for-method="step1_EnterAddress(8888, 8888 Alpha)">step1_EnterAddress(8888, 8888 Alpha)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1Bonus" class="method navigator-link" hash-for-method="step1_EnterAddress">step1_EnterAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step1_EnterAddress">step1_EnterAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase2" class="method navigator-link" hash-for-method="step1_EnterAddress(8888, 8888 Alpha)">step1_EnterAddress(8888, 8888 Alpha)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step2_SearchForRestaurantsNearAddress">step2_SearchForRestaurantsNearAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1Bonus" class="method navigator-link" hash-for-method="step2_SearchForRestaurantsNearAddress">step2_SearchForRestaurantsNearAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="automationassignment.TestCase1" class="method navigator-link" hash-for-method="step3_AddItemsToBasket">step3_AddItemsToBasket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestSuite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,11 +229,344 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-TestSuite1" class="panel TestSuite1">
+          <div class="suite-TestSuite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automationassignment.TestCase1Bonus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_AddItemsToBasket">
+                  </a> <!-- step3_AddItemsToBasket -->
+                  <span class="method-name">step3_AddItemsToBasket</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy14.get(Unknown Source)
+	at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:14)
+	at pages.PageRestaurantMenu.addDishToBasket(PageRestaurantMenu.java:28)
+	at automationassignment.TestCase1Bonus.step3_AddItemsToBasket(TestCase1Bonus.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-failed -->
+          <div class="suite-TestSuite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automationassignment.TestCase2Bonus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step1_EnterAddress(8888, 8888 Alpha)">
+                  </a> <!-- step1_EnterAddress(8888, 8888 Alpha) -->
+                  <span class="method-name">step1_EnterAddress</span>
+                  <span class="parameters">(8888, 8888 Alpha)</span>
+                  <div class="stack-trace">java.lang.StringIndexOutOfBoundsException: String index out of range: -11
+	at java.base/java.lang.String.substring(String.java:1850)
+	at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:26)
+	at pages.PageTimeToOrderFood.selectSuggestedAddressFromList(PageTimeToOrderFood.java:43)
+	at pages.PageTimeToOrderFood.enterAddress(PageTimeToOrderFood.java:33)
+	at automationassignment.TestCase2Bonus.step1_EnterAddress(TestCase2Bonus.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-failed -->
+          <div class="suite-TestSuite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automationassignment.TestCase2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_SearchForRestaurantsNearAddress(QA Restaurant Selenium)">
+                  </a> <!-- step2_SearchForRestaurantsNearAddress(QA Restaurant Selenium) -->
+                  <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                  <span class="parameters">(QA Restaurant Selenium)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 26488, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
+*** Element info: {Using=xpath, value=//body[@class=&apos;step2 is-restaurant-list welcome&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:3042)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
+	at pages.PageDisplayRestaurants.isAt(PageDisplayRestaurants.java:26)
+	at automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress(TestCase2.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-failed -->
+          <div class="suite-TestSuite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automationassignment.TestCase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step4_CaptureDetailsForDelivery">
+                  </a> <!-- step4_CaptureDetailsForDelivery -->
+                  <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 11772, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
+*** Element info: {Using=xpath, value=//h1[contains(.,&apos;Ready to eat?&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:3042)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
+	at pages.PageCheckout.isAt(PageCheckout.java:56)
+	at automationassignment.TestCase1.step4_CaptureDetailsForDelivery(TestCase1.java:42)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-failed -->
+          <div class="suite-TestSuite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">automationassignment.TestCase1Bonus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step4_CaptureDetailsForDelivery">
+                  </a> <!-- step4_CaptureDetailsForDelivery -->
+                  <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step5_ReceiveOrderReference">
+                  </a> <!-- step5_ReceiveOrderReference -->
+                  <span class="method-name">step5_ReceiveOrderReference</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-skipped -->
+          <div class="suite-TestSuite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">automationassignment.TestCase2Bonus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_SearchForRestaurantsNearAddress">
+                  </a> <!-- step2_SearchForRestaurantsNearAddress -->
+                  <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_AddItemsToBasket">
+                  </a> <!-- step3_AddItemsToBasket -->
+                  <span class="method-name">step3_AddItemsToBasket</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step4_CaptureDetailsForDelivery">
+                  </a> <!-- step4_CaptureDetailsForDelivery -->
+                  <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step5_ReceiveOrderReference">
+                  </a> <!-- step5_ReceiveOrderReference -->
+                  <span class="method-name">step5_ReceiveOrderReference</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-skipped -->
+          <div class="suite-TestSuite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">automationassignment.TestCase2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_AddItemsToBasket">
+                  </a> <!-- step3_AddItemsToBasket -->
+                  <span class="method-name">step3_AddItemsToBasket</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step4_CaptureDetailsForDelivery">
+                  </a> <!-- step4_CaptureDetailsForDelivery -->
+                  <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step5_ReceiveOrderReference">
+                  </a> <!-- step5_ReceiveOrderReference -->
+                  <span class="method-name">step5_ReceiveOrderReference</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-skipped -->
+          <div class="suite-TestSuite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">automationassignment.TestCase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step5_ReceiveOrderReference">
+                  </a> <!-- step5_ReceiveOrderReference -->
+                  <span class="method-name">step5_ReceiveOrderReference</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCase1.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@6b4a4e18] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-skipped -->
+          <div class="suite-TestSuite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">automationassignment.TestCase3</span>
+              <span class="class-name">automationassignment.TestCase1Bonus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step1_EnterAddress">
+                  </a> <!-- step1_EnterAddress -->
+                  <span class="method-name">step1_EnterAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_SearchForRestaurantsNearAddress">
+                  </a> <!-- step2_SearchForRestaurantsNearAddress -->
+                  <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-passed -->
+          <div class="suite-TestSuite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationassignment.TestCase2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -132,106 +578,380 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-TestSuite1-class-passed -->
+          <div class="suite-TestSuite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationassignment.TestCase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step1_EnterAddress">
+                  </a> <!-- step1_EnterAddress -->
+                  <span class="method-name">step1_EnterAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_SearchForRestaurantsNearAddress">
+                  </a> <!-- step2_SearchForRestaurantsNearAddress -->
+                  <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_AddItemsToBasket">
+                  </a> <!-- step3_AddItemsToBasket -->
+                  <span class="method-name">step3_AddItemsToBasket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite1-class-passed -->
+        </div> <!-- panel TestSuite1 -->
+        <div panel-name="test-xml-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shauncr\AppData\Local\Temp\testng-eclipse--994290246\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shauncr\eclipse-workspace\Assesment\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;TestSuite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;TestCases1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;automationassignment.TestCase3&quot;/&gt;
+      &lt;class name=&quot;automationassignment.TestCase1&quot;/&gt;
+      &lt;class name=&quot;automationassignment.TestCase1Bonus&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- TestCases1 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;TestCase2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;automationassignment.TestCase2&quot;/&gt;
+      &lt;class name=&quot;automationassignment.TestCase2Bonus&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestCase2 --&gt;
+&lt;/suite&gt; &lt;!-- TestSuite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for TestSuite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">TestCases1 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestCase2 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for TestSuite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for TestSuite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_TestSuite1');
+function tableData_TestSuite1() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'step1_EnterAddress')
-data.setCell(0, 2, 'automationassignment.TestCase3')
-data.setCell(0, 3, 10948);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'step2_SearchForRestaurantsNearAddress')
+data.setCell(0, 2, 'automationassignment.TestCase1')
+data.setCell(0, 3, 13038);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'step2_SearchForRestaurantsNearAddress')
+data.setCell(1, 2, 'automationassignment.TestCase1Bonus')
+data.setCell(1, 3, 12397);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'step1_EnterAddress')
+data.setCell(2, 2, 'automationassignment.TestCase2')
+data.setCell(2, 3, 9075);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'step1_EnterAddress')
+data.setCell(3, 2, 'automationassignment.TestCase1')
+data.setCell(3, 3, 8470);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'step1_EnterAddress')
+data.setCell(4, 2, 'automationassignment.TestCase1Bonus')
+data.setCell(4, 3, 8320);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'step3_AddItemsToBasket')
+data.setCell(5, 2, 'automationassignment.TestCase1')
+data.setCell(5, 3, 7985);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'step3_AddItemsToBasket')
+data.setCell(6, 2, 'automationassignment.TestCase1Bonus')
+data.setCell(6, 3, 7935);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'step1_EnterAddress')
+data.setCell(7, 2, 'automationassignment.TestCase2Bonus')
+data.setCell(7, 3, 6179);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'step4_CaptureDetailsForDelivery')
+data.setCell(8, 2, 'automationassignment.TestCase1')
+data.setCell(8, 3, 4013);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'step2_SearchForRestaurantsNearAddress')
+data.setCell(9, 2, 'automationassignment.TestCase2')
+data.setCell(9, 3, 4010);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'step5_ReceiveOrderReference')
+data.setCell(10, 2, 'automationassignment.TestCase1Bonus')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'step4_CaptureDetailsForDelivery')
+data.setCell(11, 2, 'automationassignment.TestCase1Bonus')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'step5_ReceiveOrderReference')
+data.setCell(12, 2, 'automationassignment.TestCase1')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'step3_AddItemsToBasket')
+data.setCell(13, 2, 'automationassignment.TestCase2Bonus')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'step2_SearchForRestaurantsNearAddress')
+data.setCell(14, 2, 'automationassignment.TestCase2Bonus')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'step3_AddItemsToBasket')
+data.setCell(15, 2, 'automationassignment.TestCase2')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'step5_ReceiveOrderReference')
+data.setCell(16, 2, 'automationassignment.TestCase2')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'step4_CaptureDetailsForDelivery')
+data.setCell(17, 2, 'automationassignment.TestCase2')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'step5_ReceiveOrderReference')
+data.setCell(18, 2, 'automationassignment.TestCase2Bonus')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'step4_CaptureDetailsForDelivery')
+data.setCell(19, 2, 'automationassignment.TestCase2Bonus')
+data.setCell(19, 3, 0);
+window.suiteTableData['TestSuite1']= { tableData: data, tableDiv: 'times-div-TestSuite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-TestSuite1">
+              </div> <!-- times-div-TestSuite1 -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for TestSuite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">automationassignment.TestCase3</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationassignment.TestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openPage</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1Bonus</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openPage</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">step1_EnterAddress(8888, 8888 Alpha)</span>
-                <span class="method-start">4704 ms</span>
+                <span class="method-name">step1_EnterAddress</span>
+                <span class="method-start">8253 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1Bonus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step1_EnterAddress</span>
+                <span class="method-start">9118 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                <span class="method-start">16728 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1Bonus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                <span class="method-start">17440 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step3_AddItemsToBasket</span>
+                <span class="method-start">29769 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1Bonus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">step3_AddItemsToBasket</span>
+                <span class="method-start">29840 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                <span class="method-start">37756 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1Bonus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                <span class="method-start">37784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step5_ReceiveOrderReference</span>
+                <span class="method-start">37786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">15655 ms</span>
+                <span class="method-start">37790 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step5_ReceiveOrderReference</span>
+                <span class="method-start">41772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">41774 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openPage</span>
+                <span class="method-start">41829 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2Bonus</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openPage</span>
+                <span class="method-start">41829 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step1_EnterAddress(8888, 8888 Alpha)</span>
+                <span class="method-start">45900 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2Bonus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">step1_EnterAddress(8888, 8888 Alpha)</span>
+                <span class="method-start">50578 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">step2_SearchForRestaurantsNearAddress(QA Restaurant Selenium)</span>
+                <span class="method-start">55033 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2Bonus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step2_SearchForRestaurantsNearAddress</span>
+                <span class="method-start">56759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step3_AddItemsToBasket</span>
+                <span class="method-start">56761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                <span class="method-start">56764 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step5_ReceiveOrderReference</span>
+                <span class="method-start">56766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">56768 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationassignment.TestCase2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step3_AddItemsToBasket</span>
+                <span class="method-start">59045 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step4_CaptureDetailsForDelivery</span>
+                <span class="method-start">59046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step5_ReceiveOrderReference</span>
+                <span class="method-start">59046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">59047 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

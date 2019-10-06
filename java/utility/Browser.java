@@ -42,7 +42,8 @@ public class Browser {
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
-
+		
+		//Must map path to your work environment for this to run
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\chromedriver\\chromedriver.exe");
 		WebDriver webDriver = new ChromeDriver(options);
 		
@@ -110,6 +111,7 @@ public class Browser {
 	}
 
 	public static Browser runIE() {
+		//Must map path to your work environment for this to run
 		String IEDriverPath = "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\iedriverserver\\IEDriverServer3.12.exe";
 		System.setProperty("webdriver.ie.driver",IEDriverPath);
 		DesiredCapabilities dc = new DesiredCapabilities();	
@@ -126,6 +128,7 @@ public class Browser {
 	}
 
 	public static Browser runFirefox() {
+		//Must map path to your work environment for this to run
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\geckodriver\\geckodriver.exe");
 		WebDriver webDriver = new FirefoxDriver();
 		Browser browserFirefox = new Browser (webDriver);

@@ -1,16 +1,15 @@
 package automationassignment;
 
-
-
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.BaseChrome;
+import base.BaseFireFox;
 import pages.Pages;
 import utility.Data;
 
-public class TestCase2 extends BaseChrome{
+public class TestCase2Bonus extends BaseFireFox{
 
 	//Start to Feed data from excel spreadsheet
     @DataProvider(name = "testData1")

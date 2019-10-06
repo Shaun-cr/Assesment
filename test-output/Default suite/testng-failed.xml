@@ -5,8 +5,12 @@
     <classes>
       <class name="automationassignment.TestCase3">
         <methods>
+          <include name="step3_AddItemsToBasket" invocation-numbers="0"/>
           <include name="openPage"/>
           <include name="closeBrowser"/>
+          <include name="step4_CaptureDetailsForDelivery"/>
+          <include name="step5_ReceiveOrderReference"/>
+          <include name="step2_SearchForRestaurantsNearAddress"/>
           <include name="step1_EnterAddress"/>
         </methods>
       </class> <!-- automationassignment.TestCase3 -->
