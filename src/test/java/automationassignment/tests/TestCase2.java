@@ -11,6 +11,11 @@ import pages.Pages;
 import utility.Data;
 
 public class TestCase2 extends BaseChrome{
+// I used this test to read static data from spreadsheet
+// I also assumed that I could select any restaurant 
+// I allso assumed that Menu means and Item or dish at restaurant
+// The Annotation @DataProvider gets data from excel spreadsheet and then pass it through to the tests.
+//	I have also used "DependsOnMethods" because else testng will try to execute each method. With the depends the test will stop and not waste time when it fails
 
 	//Start to Feed data from excel spreadsheet
     @DataProvider(name = "testData1")

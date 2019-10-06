@@ -11,7 +11,7 @@ public class TestCase1Bonus extends BaseFireFox{
 	
   @Test
   public void step1_EnterAddress() {
-	  
+		
 	  Assert.assertTrue(Pages.pageTimeToOrderFood().isAt(),"Pages.pageTimeToOrderFood().isAt() - Page not found !");
 	  Pages.pageTimeToOrderFood().enterAddress("8888","8888 Alpha");
   }

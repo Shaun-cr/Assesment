@@ -1,352 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="6" failed="4" skipped="10">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[The Order Reference Number is: 2PB2VT]]>
+    </line>
+    <line>
+      <![CDATA[The Order Reference Number is: RK1OCW]]>
+    </line>
+    <line>
+      <![CDATA[The Order Reference Number is: XDLLP7]]>
+    </line>
+    <line>
+      <![CDATA[The Order Reference Number is: RSZ9ML]]>
+    </line>
   </reporter-output>
-  <suite started-at="2019-10-06T11:16:25 SAST" name="TestSuite1" finished-at="2019-10-06T11:17:24 SAST" duration-ms="59066">
+  <suite started-at="2019-10-06T13:21:53 SAST" name="TestSuite1" finished-at="2019-10-06T13:26:03 SAST" duration-ms="250187">
     <groups>
     </groups>
-    <test started-at="2019-10-06T11:16:25 SAST" name="TestCases1" finished-at="2019-10-06T11:17:07 SAST" duration-ms="41794">
-      <class name="automationassignment.TestCase1">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:16:25 SAST" name="openPage" finished-at="2019-10-06T11:16:34 SAST" duration-ms="8242" status="PASS">
+    <test started-at="2019-10-06T13:21:53 SAST" name="TestCases1" finished-at="2019-10-06T13:23:58 SAST" duration-ms="124536">
+      <class name="automationassignment.tests.TestCase1Bonus">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:22:56 SAST" name="openPage" finished-at="2019-10-06T13:23:01 SAST" duration-ms="4947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:16:34 SAST" name="step1_EnterAddress" finished-at="2019-10-06T11:16:42 SAST" duration-ms="8470" status="PASS">
+        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:23:01 SAST" name="step1_EnterAddress" finished-at="2019-10-06T13:23:09 SAST" duration-ms="8420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step1_EnterAddress -->
-        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:16:42 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T11:16:55 SAST" depends-on-methods="automationassignment.TestCase1.step1_EnterAddress" duration-ms="13038" status="PASS">
+        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:23:09 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T13:23:23 SAST" depends-on-methods="automationassignment.tests.TestCase1Bonus.step1_EnterAddress" duration-ms="13402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
-        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:16:55 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T11:17:03 SAST" depends-on-methods="automationassignment.TestCase1.step2_SearchForRestaurantsNearAddress" duration-ms="7985" status="PASS">
+        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:23:23 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T13:23:31 SAST" depends-on-methods="automationassignment.tests.TestCase1Bonus.step2_SearchForRestaurantsNearAddress" duration-ms="8133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_AddItemsToBasket -->
-        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:17:03 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T11:17:07 SAST" depends-on-methods="automationassignment.TestCase1.step3_AddItemsToBasket" duration-ms="4013" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MWLTPF1MEAFD', ip: '8.11.8.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 11772, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
-*** Element info: {Using=xpath, value=//h1[contains(.,'Ready to eat?')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MWLTPF1MEAFD', ip: '8.11.8.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 11772, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
-*** Element info: {Using=xpath, value=//h1[contains(.,'Ready to eat?')]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:3042)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
-at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
-at pages.PageCheckout.isAt(PageCheckout.java:56)
-at automationassignment.TestCase1.step4_CaptureDetailsForDelivery(TestCase1.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:23:31 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T13:23:47 SAST" depends-on-methods="automationassignment.tests.TestCase1Bonus.step3_AddItemsToBasket" duration-ms="16476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step4_CaptureDetailsForDelivery -->
-        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:17:07 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T11:17:07 SAST" depends-on-methods="automationassignment.TestCase1.step4_CaptureDetailsForDelivery" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase1.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@6b4a4e18] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase1.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@6b4a4e18] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:23:47 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T13:23:53 SAST" depends-on-methods="automationassignment.tests.TestCase1Bonus.step4_CaptureDetailsForDelivery" duration-ms="6136" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[The Order Reference Number is: RK1OCW]]>
+            </line>
           </reporter-output>
         </test-method> <!-- step5_ReceiveOrderReference -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase1@6b4a4e18]" started-at="2019-10-06T11:17:07 SAST" name="closeBrowser" finished-at="2019-10-06T11:17:07 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T13:23:53 SAST" name="closeBrowser" finished-at="2019-10-06T13:23:58 SAST" duration-ms="4338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- automationassignment.TestCase1 -->
-      <class name="automationassignment.TestCase1Bonus">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:16:25 SAST" name="openPage" finished-at="2019-10-06T11:16:34 SAST" duration-ms="9118" status="PASS">
+      </class> <!-- automationassignment.tests.TestCase1Bonus -->
+      <class name="automationassignment.tests.TestCase1">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:21:53 SAST" name="openPage" finished-at="2019-10-06T13:22:02 SAST" duration-ms="9144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:16:34 SAST" name="step1_EnterAddress" finished-at="2019-10-06T11:16:43 SAST" duration-ms="8320" status="PASS">
+        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:22:02 SAST" name="step1_EnterAddress" finished-at="2019-10-06T13:22:13 SAST" duration-ms="10264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step1_EnterAddress -->
-        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:16:43 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T11:16:55 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step1_EnterAddress" duration-ms="12397" status="PASS">
+        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:22:13 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T13:22:26 SAST" depends-on-methods="automationassignment.tests.TestCase1.step1_EnterAddress" duration-ms="13784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
-        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:16:55 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T11:17:03 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step2_SearchForRestaurantsNearAddress" duration-ms="7935" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 1 out of bounds for length 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-at java.base/java.util.Objects.checkIndex(Objects.java:372)
-at java.base/java.util.ArrayList.get(ArrayList.java:458)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-at com.sun.proxy.$Proxy14.get(Unknown Source)
-at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:14)
-at pages.PageRestaurantMenu.addDishToBasket(PageRestaurantMenu.java:28)
-at automationassignment.TestCase1Bonus.step3_AddItemsToBasket(TestCase1Bonus.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:22:26 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T13:22:35 SAST" depends-on-methods="automationassignment.tests.TestCase1.step2_SearchForRestaurantsNearAddress" duration-ms="8489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_AddItemsToBasket -->
-        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:17:03 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T11:17:03 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step3_AddItemsToBasket" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:22:35 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T13:22:49 SAST" depends-on-methods="automationassignment.tests.TestCase1.step3_AddItemsToBasket" duration-ms="14528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step4_CaptureDetailsForDelivery -->
-        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:17:03 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T11:17:03 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step4_CaptureDetailsForDelivery" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:22:49 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T13:22:56 SAST" depends-on-methods="automationassignment.tests.TestCase1.step4_CaptureDetailsForDelivery" duration-ms="6267" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[The Order Reference Number is: 2PB2VT]]>
+            </line>
           </reporter-output>
         </test-method> <!-- step5_ReceiveOrderReference -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d]" started-at="2019-10-06T11:17:03 SAST" name="closeBrowser" finished-at="2019-10-06T11:17:05 SAST" duration-ms="2131" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.tests.TestCase1@6b4a4e18]" started-at="2019-10-06T13:22:56 SAST" name="closeBrowser" finished-at="2019-10-06T13:22:56 SAST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- automationassignment.TestCase1Bonus -->
+      </class> <!-- automationassignment.tests.TestCase1 -->
     </test> <!-- TestCases1 -->
-    <test started-at="2019-10-06T11:17:07 SAST" name="TestCase2" finished-at="2019-10-06T11:17:24 SAST" duration-ms="17219">
-      <class name="automationassignment.TestCase2Bonus">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:07 SAST" name="openPage" finished-at="2019-10-06T11:17:16 SAST" duration-ms="8694" status="PASS">
+    <test started-at="2019-10-06T13:23:58 SAST" name="TestCases2" finished-at="2019-10-06T13:26:03 SAST" duration-ms="125611">
+      <class name="automationassignment.tests.TestCase2Bonus">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:00 SAST" name="openPage" finished-at="2019-10-06T13:25:05 SAST" duration-ms="5376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="step1_EnterAddress(java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:16 SAST" name="step1_EnterAddress" data-provider="testData1" finished-at="2019-10-06T11:17:22 SAST" duration-ms="6179" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8888]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8888 Alpha]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.StringIndexOutOfBoundsException">
-            <message>
-              <![CDATA[String index out of range: -11]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: -11
-at java.base/java.lang.String.substring(String.java:1850)
-at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:26)
-at pages.PageTimeToOrderFood.selectSuggestedAddressFromList(PageTimeToOrderFood.java:43)
-at pages.PageTimeToOrderFood.enterAddress(PageTimeToOrderFood.java:33)
-at automationassignment.TestCase2Bonus.step1_EnterAddress(TestCase2Bonus.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- step1_EnterAddress -->
-        <test-method signature="step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:22 SAST" name="step2_SearchForRestaurantsNearAddress" data-provider="testData2" finished-at="2019-10-06T11:17:22 SAST" depends-on-methods="automationassignment.TestCase2Bonus.step1_EnterAddress" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
-        <test-method signature="step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:22 SAST" name="step3_AddItemsToBasket" data-provider="testData3" finished-at="2019-10-06T11:17:22 SAST" depends-on-methods="automationassignment.TestCase2Bonus.step2_SearchForRestaurantsNearAddress" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- step3_AddItemsToBasket -->
-        <test-method signature="step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:22 SAST" name="step4_CaptureDetailsForDelivery" data-provider="testData4" finished-at="2019-10-06T11:17:22 SAST" depends-on-methods="automationassignment.TestCase2Bonus.step3_AddItemsToBasket" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- step4_CaptureDetailsForDelivery -->
-        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:22 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T11:17:22 SAST" depends-on-methods="automationassignment.TestCase2Bonus.step4_CaptureDetailsForDelivery" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- step5_ReceiveOrderReference -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95]" started-at="2019-10-06T11:17:22 SAST" name="closeBrowser" finished-at="2019-10-06T11:17:24 SAST" duration-ms="2083" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- automationassignment.TestCase2Bonus -->
-      <class name="automationassignment.TestCase2">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:07 SAST" name="openPage" finished-at="2019-10-06T11:17:11 SAST" duration-ms="3937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openPage -->
-        <test-method signature="step1_EnterAddress(java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:11 SAST" name="step1_EnterAddress" data-provider="testData1" finished-at="2019-10-06T11:17:20 SAST" duration-ms="9075" status="PASS">
+        <test-method signature="step1_EnterAddress(java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:05 SAST" name="step1_EnterAddress" data-provider="testData1" finished-at="2019-10-06T13:25:14 SAST" duration-ms="8476" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -362,7 +107,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step1_EnterAddress -->
-        <test-method signature="step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:20 SAST" name="step2_SearchForRestaurantsNearAddress" data-provider="testData2" finished-at="2019-10-06T11:17:24 SAST" depends-on-methods="automationassignment.TestCase2.step1_EnterAddress" duration-ms="4010" status="FAIL">
+        <test-method signature="step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:14 SAST" name="step2_SearchForRestaurantsNearAddress" data-provider="testData2" finished-at="2019-10-06T13:25:27 SAST" depends-on-methods="automationassignment.tests.TestCase2Bonus.step1_EnterAddress" duration-ms="13390" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -370,130 +115,169 @@ at java.base/java.lang.Thread.run(Thread.java:835)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MWLTPF1MEAFD', ip: '8.11.8.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 26488, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
-*** Element info: {Using=xpath, value=//body[@class='step2 is-restaurant-list welcome']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MWLTPF1MEAFD', ip: '8.11.8.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 26488, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
-*** Element info: {Using=xpath, value=//body[@class='step2 is-restaurant-list welcome']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:3042)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
-at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
-at pages.PageDisplayRestaurants.isAt(PageDisplayRestaurants.java:26)
-at automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress(TestCase2.java:52)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
-        <test-method signature="step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:24 SAST" name="step3_AddItemsToBasket" data-provider="testData3" finished-at="2019-10-06T11:17:24 SAST" depends-on-methods="automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:27 SAST" name="step3_AddItemsToBasket" data-provider="testData3" finished-at="2019-10-06T13:25:36 SAST" depends-on-methods="automationassignment.tests.TestCase2Bonus.step2_SearchForRestaurantsNearAddress" duration-ms="8368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Salami]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_AddItemsToBasket -->
-        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:24 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T11:17:24 SAST" depends-on-methods="automationassignment.TestCase2.step4_CaptureDetailsForDelivery" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- step5_ReceiveOrderReference -->
-        <test-method signature="step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:24 SAST" name="step4_CaptureDetailsForDelivery" data-provider="testData4" finished-at="2019-10-06T11:17:24 SAST" depends-on-methods="automationassignment.TestCase2.step3_AddItemsToBasket" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:36 SAST" name="step4_CaptureDetailsForDelivery" data-provider="testData4" finished-at="2019-10-06T13:25:53 SAST" depends-on-methods="automationassignment.tests.TestCase2Bonus.step3_AddItemsToBasket" duration-ms="17191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[main street 2415]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8888AA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enschede]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TestUSer]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[testuser@test.test]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[As soon as possible]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step4_CaptureDetailsForDelivery -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase2@6ce139a4]" started-at="2019-10-06T11:17:24 SAST" name="closeBrowser" finished-at="2019-10-06T11:17:24 SAST" duration-ms="0" status="PASS">
+        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:53 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T13:25:59 SAST" depends-on-methods="automationassignment.tests.TestCase2Bonus.step4_CaptureDetailsForDelivery" duration-ms="6191" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[The Order Reference Number is: RSZ9ML]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- step5_ReceiveOrderReference -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.tests.TestCase2Bonus@229d10bd]" started-at="2019-10-06T13:25:59 SAST" name="closeBrowser" finished-at="2019-10-06T13:26:03 SAST" duration-ms="4263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- automationassignment.TestCase2 -->
-    </test> <!-- TestCase2 -->
+      </class> <!-- automationassignment.tests.TestCase2Bonus -->
+      <class name="automationassignment.tests.TestCase2">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:23:58 SAST" name="openPage" finished-at="2019-10-06T13:24:06 SAST" duration-ms="8265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="step1_EnterAddress(java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:24:06 SAST" name="step1_EnterAddress" data-provider="testData1" finished-at="2019-10-06T13:24:17 SAST" duration-ms="11119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8888]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8888 Alpha]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1_EnterAddress -->
+        <test-method signature="step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:24:17 SAST" name="step2_SearchForRestaurantsNearAddress" data-provider="testData2" finished-at="2019-10-06T13:24:31 SAST" depends-on-methods="automationassignment.tests.TestCase2.step1_EnterAddress" duration-ms="13887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA Restaurant Selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
+        <test-method signature="step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:24:31 SAST" name="step3_AddItemsToBasket" data-provider="testData3" finished-at="2019-10-06T13:24:39 SAST" depends-on-methods="automationassignment.tests.TestCase2.step2_SearchForRestaurantsNearAddress" duration-ms="8148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Salami]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_AddItemsToBasket -->
+        <test-method signature="step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:24:39 SAST" name="step4_CaptureDetailsForDelivery" data-provider="testData4" finished-at="2019-10-06T13:24:54 SAST" depends-on-methods="automationassignment.tests.TestCase2.step3_AddItemsToBasket" duration-ms="14049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[main street 2415]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8888AA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enschede]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TestUSer]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[testuser@test.test]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[As soon as possible]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4_CaptureDetailsForDelivery -->
+        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:24:54 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T13:25:00 SAST" depends-on-methods="automationassignment.tests.TestCase2.step4_CaptureDetailsForDelivery" duration-ms="6194" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[The Order Reference Number is: XDLLP7]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- step5_ReceiveOrderReference -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.tests.TestCase2@2ddc8ecb]" started-at="2019-10-06T13:25:00 SAST" name="closeBrowser" finished-at="2019-10-06T13:25:00 SAST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- automationassignment.tests.TestCase2 -->
+    </test> <!-- TestCases2 -->
   </suite> <!-- TestSuite1 -->
 </testng-results>

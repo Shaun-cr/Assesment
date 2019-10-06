@@ -7,7 +7,15 @@ import base.BaseChrome;
 import pages.Pages;
 
 public class TestCase1 extends BaseChrome{
+// I created this test to confirm that flow is working correthly. That a client can place a very basic simple order.
+// I confirm that every page does exist in flow
+// I excluded static data from excell file in this test, because I wanted to show easy data can be passed in manually  -this is ideal for any one to create their own scenarios
+// Please see how easy it is to create test from framework. Type "Pages.", you should be able to see all the pages and after that what can be done a page	
+// Please see bonus test can run in firefox	
 	
+// To run this test - right click and select run as TestNG test.If you don't have option, then please install testng plugin
+// to run test suite - right click testNG.xml and run as TestNG Suite	
+	       
   @Test
   public void step1_EnterAddress() {
 	  
@@ -19,8 +27,10 @@ public class TestCase1 extends BaseChrome{
   public void step2_SearchForRestaurantsNearAddress() {
 	  
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isAt(),"Pages.pageOrderFromRestaurants().isAt() - Page not found !");
+	  //Here I confirm that Restaurant list display and that it for postal code 8888-alpha
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isRestaurantsListDisplayed(),"Pages.pageOrderFromRestaurants().isRestaurantsListDisplayed() - Restaurants List looks like it is empty");
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isAddressDisplayedCorrect("8888-alpha"));
+	  // I did assume that I could select any restaurant from assesment
 	 // Pages.pageDisplayRestaurants().searchAndSelectRestaurant("Pan Pizza Man");
 	  Pages.pageDisplayRestaurants().searchAndSelectRestaurant("QA Restaurant Selenium");
 	  
@@ -54,6 +64,8 @@ public class TestCase1 extends BaseChrome{
 	  Assert.assertTrue(Pages.pageThankYouForYourOrder().isAt(),"Pages.pageThankYouForYourOrder().isAt() - Page not found !");
 	  Reporter.log("The Order Reference Number is: " + Pages.pageThankYouForYourOrder().getOrderReference());
   }
+  
+  //To view test results go to test-output folder and select either index.html but for more detail report select emailable-report.html
   
   
 }

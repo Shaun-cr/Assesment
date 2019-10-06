@@ -28,7 +28,6 @@ public class Browser {
 
 	public static void Close() {
 		driver.close();
-		
 	}
 
 	public static Browser runChrome() {
@@ -46,8 +45,8 @@ public class Browser {
 		//Must map path to your work environment for this to run
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\chromedriver\\chromedriver.exe");
 		WebDriver webDriver = new ChromeDriver(options);
-		
 		Browser browserChrome = new Browser (webDriver);
+		
 		return browserChrome;
 	}
 	
@@ -58,6 +57,7 @@ public class Browser {
 
 	public static WebDriver getDriver() {
 		// TODO Auto-generated method stub
+		System.out.println(driver);
 		return driver;
 	}
 

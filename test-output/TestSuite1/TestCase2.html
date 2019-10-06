@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/2/7</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 06 11:17:07 SAST 2019</td>
+<td>Started on:</td><td>Sun Oct 06 12:08:32 SAST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17219 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29051 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,6 +68,132 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationassignment.tests.TestCase2.closeBrowser()'><b>closeBrowser</b><br>Test class: automationassignment.tests.TestCase2</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at utility.Browser.Close(Browser.java:30)
+	at base.BaseChrome.closeBrowser(BaseChrome.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1675897432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1675897432'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at utility.Browser.Close(Browser.java:30)
+	at base.BaseChrome.closeBrowser(BaseChrome.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>automationassignment.tests.TestCase2@6ce139a4</td></tr>
+<tr>
+<td title='automationassignment.tests.TestCase2Bonus.closeBrowser()'><b>closeBrowser</b><br>Test class: automationassignment.tests.TestCase2Bonus</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at utility.Browser.Close(Browser.java:30)
+	at base.BaseFireFox.closeBrowser(BaseFireFox.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1726060300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1726060300'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at utility.Browser.Close(Browser.java:30)
+	at base.BaseFireFox.closeBrowser(BaseFireFox.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>automationassignment.tests.TestCase2Bonus@6973bf95</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -75,23 +201,97 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationassignment.TestCase2Bonus.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.TestCase2Bonus<br>Parameters: 8888, 8888 Alpha</td>
-<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -11
-	at java.base/java.lang.String.substring(String.java:1850)
-	at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:26)
-	at pages.PageTimeToOrderFood.selectSuggestedAddressFromList(PageTimeToOrderFood.java:43)
-	at pages.PageTimeToOrderFood.enterAddress(PageTimeToOrderFood.java:33)
-	at automationassignment.TestCase2Bonus.step1_EnterAddress(TestCase2Bonus.java:45)
+<td title='automationassignment.tests.TestCase2Bonus.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.tests.TestCase2Bonus<br>Parameters: 8888, 8888 Alpha</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
+*** Element info: {Using=xpath, value=//h1[contains(.,&apos;Time to order food&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:3042)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
+	at pages.PageTimeToOrderFood.isAt(PageTimeToOrderFood.java:28)
+	at automationassignment.tests.TestCase2Bonus.step1_EnterAddress(TestCase2Bonus.java:44)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245809661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace245809661'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -11
-	at java.base/java.lang.String.substring(String.java:1850)
-	at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:26)
-	at pages.PageTimeToOrderFood.selectSuggestedAddressFromList(PageTimeToOrderFood.java:43)
-	at pages.PageTimeToOrderFood.enterAddress(PageTimeToOrderFood.java:33)
-	at automationassignment.TestCase2Bonus.step1_EnterAddress(TestCase2Bonus.java:45)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2013022701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2013022701'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
+*** Element info: {Using=xpath, value=//h1[contains(.,&apos;Time to order food&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:3042)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
+	at pages.PageTimeToOrderFood.isAt(PageTimeToOrderFood.java:28)
+	at automationassignment.tests.TestCase2Bonus.step1_EnterAddress(TestCase2Bonus.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>4</td>
+<td>automationassignment.tests.TestCase2Bonus@6973bf95</td></tr>
+<tr>
+<td title='automationassignment.tests.TestCase1Bonus.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.tests.TestCase1Bonus</td>
+<td><div><pre>java.lang.AssertionError: Pages.pageOrderFromRestaurants().isAt() - Page not found ! did not expect to find [true] but found [false]
+	at automationassignment.tests.TestCase1Bonus.step2_SearchForRestaurantsNearAddress(TestCase1Bonus.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1441399826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1441399826'><pre>java.lang.AssertionError: Pages.pageOrderFromRestaurants().isAt() - Page not found ! did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at automationassignment.tests.TestCase1Bonus.step2_SearchForRestaurantsNearAddress(TestCase1Bonus.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,15 +309,15 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>6</td>
-<td>automationassignment.TestCase2Bonus@6973bf95</td></tr>
+<td>automationassignment.tests.TestCase1Bonus@27c86f2d</td></tr>
 <tr>
-<td title='automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.TestCase2<br>Parameters: QA Restaurant Selenium</td>
+<td title='automationassignment.tests.TestCase2.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.tests.TestCase2<br>Parameters: QA Restaurant Selenium</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 26488, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
 *** Element info: {Using=xpath, value=//body[@class=&apos;step2 is-restaurant-list welcome&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -136,17 +336,17 @@ Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
 	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
 	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
 	at pages.PageDisplayRestaurants.isAt(PageDisplayRestaurants.java:26)
-	at automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress(TestCase2.java:52)
+	at automationassignment.tests.TestCase2.step2_SearchForRestaurantsNearAddress(TestCase2.java:52)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace574660704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace574660704'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1863341995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1863341995'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 26488, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 24852, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f50cc62-68c8-4b50-86ae-b1a6e851fa48
 *** Element info: {Using=xpath, value=//body[@class=&apos;step2 is-restaurant-list welcome&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -170,7 +370,7 @@ Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
 	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
 	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
 	at pages.PageDisplayRestaurants.isAt(PageDisplayRestaurants.java:26)
-	at automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress(TestCase2.java:52)
+	at automationassignment.tests.TestCase2.step2_SearchForRestaurantsNearAddress(TestCase2.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,136 +388,7 @@ Session ID: 982ff621-be2e-4c6d-b4cc-0e94dac05ae9
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>4</td>
-<td>automationassignment.TestCase2@6ce139a4</td></tr>
-<tr>
-<td title='automationassignment.TestCase1Bonus.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.TestCase1Bonus</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:458)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy14.get(Unknown Source)
-	at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:14)
-	at pages.PageRestaurantMenu.addDishToBasket(PageRestaurantMenu.java:28)
-	at automationassignment.TestCase1Bonus.step3_AddItemsToBasket(TestCase1Bonus.java:36)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11097899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11097899'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:458)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy14.get(Unknown Source)
-	at utility.GeneralSelects.selectItemFromWebElementlist(GeneralSelects.java:14)
-	at pages.PageRestaurantMenu.addDishToBasket(PageRestaurantMenu.java:28)
-	at automationassignment.TestCase1Bonus.step3_AddItemsToBasket(TestCase1Bonus.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</pre></div></td>
-<td>7</td>
-<td>automationassignment.TestCase1Bonus@27c86f2d</td></tr>
-<tr>
-<td title='automationassignment.TestCase1.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.TestCase1</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 11772, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
-*** Element info: {Using=xpath, value=//h1[contains(.,&apos;Ready to eat?&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:3042)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
-	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
-	at pages.PageCheckout.isAt(PageCheckout.java:56)
-	at automationassignment.TestCase1.step4_CaptureDetailsForDelivery(TestCase1.java:42)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048287479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2048287479'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MWLTPF1MEAFD&apos;, ip: &apos;8.11.8.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 11772, moz:profile: C:\Users\shauncr\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
-*** Element info: {Using=xpath, value=//h1[contains(.,&apos;Ready to eat?&apos;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:3042)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
-	at utility.GeneralChecks.isWebElementDisplayed(GeneralChecks.java:19)
-	at pages.PageCheckout.isAt(PageCheckout.java:56)
-	at automationassignment.TestCase1.step4_CaptureDetailsForDelivery(TestCase1.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</pre></div></td>
-<td>4</td>
-<td>automationassignment.TestCase1@6b4a4e18</td></tr>
+<td>automationassignment.tests.TestCase2@6ce139a4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -327,35 +398,47 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationassignment.TestCase1.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.TestCase1</td>
+<td title='automationassignment.tests.TestCase1.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.tests.TestCase1</td>
+<td></td>
+<td>10</td>
+<td>automationassignment.tests.TestCase1@6b4a4e18</td></tr>
+<tr>
+<td title='automationassignment.tests.TestCase1Bonus.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.tests.TestCase1Bonus</td>
 <td></td>
 <td>8</td>
-<td>automationassignment.TestCase1@6b4a4e18</td></tr>
+<td>automationassignment.tests.TestCase1Bonus@27c86f2d</td></tr>
 <tr>
-<td title='automationassignment.TestCase1Bonus.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.TestCase1Bonus</td>
+<td title='automationassignment.tests.TestCase2.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.tests.TestCase2<br>Parameters: 8888, 8888 Alpha</td>
 <td></td>
-<td>8</td>
-<td>automationassignment.TestCase1Bonus@27c86f2d</td></tr>
+<td>10</td>
+<td>automationassignment.tests.TestCase2@6ce139a4</td></tr>
 <tr>
-<td title='automationassignment.TestCase2.step1_EnterAddress()'><b>step1_EnterAddress</b><br>Test class: automationassignment.TestCase2<br>Parameters: 8888, 8888 Alpha</td>
-<td></td>
-<td>9</td>
-<td>automationassignment.TestCase2@6ce139a4</td></tr>
-<tr>
-<td title='automationassignment.TestCase1.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.TestCase1</td>
+<td title='automationassignment.tests.TestCase1.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.tests.TestCase1</td>
 <td></td>
 <td>13</td>
-<td>automationassignment.TestCase1@6b4a4e18</td></tr>
+<td>automationassignment.tests.TestCase1@6b4a4e18</td></tr>
 <tr>
-<td title='automationassignment.TestCase1Bonus.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.TestCase1Bonus</td>
+<td title='automationassignment.tests.TestCase1.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.tests.TestCase1</td>
 <td></td>
-<td>12</td>
-<td>automationassignment.TestCase1Bonus@27c86f2d</td></tr>
+<td>8</td>
+<td>automationassignment.tests.TestCase1@6b4a4e18</td></tr>
 <tr>
-<td title='automationassignment.TestCase1.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.TestCase1</td>
+<td title='automationassignment.tests.TestCase1.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.tests.TestCase1</td>
 <td></td>
-<td>7</td>
-<td>automationassignment.TestCase1@6b4a4e18</td></tr>
+<td>17</td>
+<td>automationassignment.tests.TestCase1@6b4a4e18</td></tr>
+<tr>
+<td title='automationassignment.tests.TestCase1.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.tests.TestCase1<br/>
+<a href="#Output-1936561003" onClick='toggleBox("Output-1936561003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1936561003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1936561003">
+The Order Reference Number is: IMNQ7V<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>automationassignment.tests.TestCase1@6b4a4e18</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -365,13 +448,13 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationassignment.TestCase2Bonus.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.TestCase2Bonus</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2Bonus.step2_SearchForRestaurantsNearAddress()'><b>step2_SearchForRestaurantsNearAddress</b><br>Test class: automationassignment.tests.TestCase2Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1818714582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1818714582'><pre>java.lang.Throwable: Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace476450375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace476450375'><pre>java.lang.Throwable: Method TestCase2Bonus.step2_SearchForRestaurantsNearAddress(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -380,15 +463,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2Bonus@6973bf95</td></tr>
+<td>automationassignment.tests.TestCase2Bonus@6973bf95</td></tr>
 <tr>
-<td title='automationassignment.TestCase2Bonus.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.TestCase2Bonus</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase1Bonus.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.tests.TestCase1Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase1Bonus.step3_AddItemsToBasket()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250879806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1250879806'><pre>java.lang.Throwable: Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1746302715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746302715'><pre>java.lang.Throwable: Method TestCase1Bonus.step3_AddItemsToBasket()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -397,15 +480,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2Bonus@6973bf95</td></tr>
+<td>automationassignment.tests.TestCase1Bonus@27c86f2d</td></tr>
 <tr>
-<td title='automationassignment.TestCase2.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.TestCase2</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.tests.TestCase2</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@6ce139a4] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace58667821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace58667821'><pre>java.lang.Throwable: Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace570126791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace570126791'><pre>java.lang.Throwable: Method TestCase2.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@6ce139a4] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -414,15 +497,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2@6ce139a4</td></tr>
+<td>automationassignment.tests.TestCase2@6ce139a4</td></tr>
 <tr>
-<td title='automationassignment.TestCase1Bonus.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.TestCase1Bonus</td>
-<td><div><pre>java.lang.Throwable: Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2Bonus.step3_AddItemsToBasket()'><b>step3_AddItemsToBasket</b><br>Test class: automationassignment.tests.TestCase2Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2057057364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2057057364'><pre>java.lang.Throwable: Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace861882546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace861882546'><pre>java.lang.Throwable: Method TestCase2Bonus.step3_AddItemsToBasket(java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -431,15 +514,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase1Bonus@27c86f2d</td></tr>
+<td>automationassignment.tests.TestCase2Bonus@6973bf95</td></tr>
 <tr>
-<td title='automationassignment.TestCase2Bonus.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.TestCase2Bonus</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase1Bonus.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.tests.TestCase1Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace787063863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace787063863'><pre>java.lang.Throwable: Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace492273249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace492273249'><pre>java.lang.Throwable: Method TestCase1Bonus.step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -448,15 +531,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2Bonus@6973bf95</td></tr>
+<td>automationassignment.tests.TestCase1Bonus@27c86f2d</td></tr>
 <tr>
-<td title='automationassignment.TestCase2.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.TestCase2</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.tests.TestCase2</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@6ce139a4] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2063369014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2063369014'><pre>java.lang.Throwable: Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538158701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538158701'><pre>java.lang.Throwable: Method TestCase2.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2@6ce139a4] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -465,15 +548,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2@6ce139a4</td></tr>
+<td>automationassignment.tests.TestCase2@6ce139a4</td></tr>
 <tr>
-<td title='automationassignment.TestCase1Bonus.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.TestCase1Bonus</td>
-<td><div><pre>java.lang.Throwable: Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2Bonus.step4_CaptureDetailsForDelivery()'><b>step4_CaptureDetailsForDelivery</b><br>Test class: automationassignment.tests.TestCase2Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744619197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744619197'><pre>java.lang.Throwable: Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace922159400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace922159400'><pre>java.lang.Throwable: Method TestCase2Bonus.step4_CaptureDetailsForDelivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -482,15 +565,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase1Bonus@27c86f2d</td></tr>
+<td>automationassignment.tests.TestCase2Bonus@6973bf95</td></tr>
 <tr>
-<td title='automationassignment.TestCase1.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.TestCase1</td>
-<td><div><pre>java.lang.Throwable: Method TestCase1.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@6b4a4e18] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase1Bonus.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.tests.TestCase1Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1474667912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1474667912'><pre>java.lang.Throwable: Method TestCase1.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@6b4a4e18] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace467305000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace467305000'><pre>java.lang.Throwable: Method TestCase1Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase1Bonus@27c86f2d] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -499,15 +582,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase1@6b4a4e18</td></tr>
+<td>automationassignment.tests.TestCase1Bonus@27c86f2d</td></tr>
 <tr>
-<td title='automationassignment.TestCase2Bonus.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.TestCase2Bonus</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.tests.TestCase2</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase2@6ce139a4] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace448292387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace448292387'><pre>java.lang.Throwable: Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2Bonus@6973bf95] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901688979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901688979'><pre>java.lang.Throwable: Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase2@6ce139a4] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -516,15 +599,15 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2Bonus@6973bf95</td></tr>
+<td>automationassignment.tests.TestCase2@6ce139a4</td></tr>
 <tr>
-<td title='automationassignment.TestCase2.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.TestCase2</td>
-<td><div><pre>java.lang.Throwable: Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+<td title='automationassignment.tests.TestCase2Bonus.step5_ReceiveOrderReference()'><b>step5_ReceiveOrderReference</b><br>Test class: automationassignment.tests.TestCase2Bonus</td>
+<td><div><pre>java.lang.Throwable: Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1267422892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1267422892'><pre>java.lang.Throwable: Method TestCase2.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@6ce139a4] depends on not successfully finished methods
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1779094781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1779094781'><pre>java.lang.Throwable: Method TestCase2Bonus.step5_ReceiveOrderReference()[pri:0, instance:automationassignment.tests.TestCase2Bonus@6973bf95] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -533,7 +616,7 @@ Session ID: a5c85d07-ccaa-44a5-b370-a0ed5d691f72
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>automationassignment.TestCase2@6ce139a4</td></tr>
+<td>automationassignment.tests.TestCase2Bonus@6973bf95</td></tr>
 </table><p>
 </body>
 </html>

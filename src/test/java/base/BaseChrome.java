@@ -17,6 +17,6 @@ public class BaseChrome {
 
 	 @AfterClass
 	 public static void closeBrowser(){
-		//Browser.Close();
+		Browser.Close();
 	 }
 }

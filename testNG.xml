@@ -1,22 +1,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 
-<suite name="TestSuite1" >
+<suite name="TestSuite1" parallel="classes" thread-count="2" >
          
-  <test name="TestCases1" parallel="classes" thread-count="3">
+  <test name="TestCases1" group-by-instances="true" >
 	 <classes>
-	   <class name="automationassignment.TestCase1"/>
-	   <class name="automationassignment.TestCase1Bonus"/>
+	   <class name="automationassignment.tests.TestCase1"/>
+	 	<class name="automationassignment.tests.TestCase1Bonus"/>
 	 </classes>
    </test>
-   
-   
-        
-  <test name="TestCase2" parallel="classes" thread-count="3">
+
+  <test name="TestCases2" group-by-instances="true" >
 	 <classes>
-	   <class name="automationassignment.TestCase2"/>
-	   <class name="automationassignment.TestCase2Bonus"/>
+	   <class name="automationassignment.tests.TestCase2"/>
+	 	<class name="automationassignment.tests.TestCase2Bonus"/>
 	 </classes>
    </test>
    
    
 </suite>
+
+<!--COMMENTS -->
+<!--This isn't running in parallel yet. If you remove "group-by-instances" then it should brake. After a bit of debugging I believe the problem is in the Pages class when driver is returned from Browser class. It is trying to execute both tests in one driver,namely firefox. I have kept it to execute each test after each other because at least then it is still adding value -->
+<!--to run me, right click on me and run as TestNG Suite -->
+<!--to view results, go to test-output folder and choose emailable-report -->
