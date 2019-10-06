@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Test-Class Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="classes" name="TestCases(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationassignment.TestCase1">
+      <class name="automationassignment.TestCase3">
         <methods>
           <include name="openPage"/>
           <include name="closeBrowser"/>
           <include name="step1_EnterAddress"/>
-          <include name="step2_SearchForRestaurantsNearAddress"/>
-          <include name="step4_CaptureDetailsForDelivery"/>
-          <include name="step5_ReceiveOrderReference"/>
-          <include name="step3_AddItemsToBasket"/>
         </methods>
-      </class> <!-- automationassignment.TestCase1 -->
-      <class name="automationassignment.TestCase1Bonus">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="step4_CaptureDetailsForDelivery"/>
-          <include name="step5_ReceiveOrderReference"/>
-          <include name="openPage"/>
-          <include name="step2_SearchForRestaurantsNearAddress"/>
-          <include name="step3_AddItemsToBasket"/>
-          <include name="step1_EnterAddress"/>
-        </methods>
-      </class> <!-- automationassignment.TestCase1Bonus -->
+      </class> <!-- automationassignment.TestCase3 -->
     </classes>
-  </test> <!-- TestCases(failed) -->
-</suite> <!-- Failed suite [Test-Class Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

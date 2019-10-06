@@ -15,20 +15,27 @@ import jxl.Workbook;
 import pages.Pages;
 
 public class TestCase3 extends BaseChrome{
-
+	String ExcellPath = "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\Excell\\StaticData.xls";
+/*
   @DataProvider     
   public Object[][] testData(){
 	  return new Object[][] {
 		  new Object[] {"8888","8888 Alpha"},
 		  };
 	  }
- 
+ */
+	
+    @DataProvider(name = "DP1")
+    public Object[][] createData1() throws Exception{
+        Object[][] retObjArr=getTableArray(ExcellPath, "Sheet1", "testData1");
+        return(retObjArr);
+    }
   
-  @Test(dataProvider="testData")
-  public void step1_EnterAddress(String Add1,String Add2) {
+  @Test(dataProvider="DP1")
+  public void step1_EnterAddress(String Address1,String Address2) throws Exception{
 	  
 	  Assert.assertTrue(Pages.pageTimeToOrderFood().isAt(),"Pages.pageTimeToOrderFood().isAt() - Page not found !");
-	  Pages.pageTimeToOrderFood().enterAddress(Add1,Add2);
+	  Pages.pageTimeToOrderFood().enterAddress(Address1,Address2);
   }
   /*
   @Test (dependsOnMethods={"step1_EnterAddress"})            
@@ -66,7 +73,6 @@ public class TestCase3 extends BaseChrome{
 	  Reporter.log("The Order Reference Number is: " + Pages.pageThankYouForYourOrder().getOrderReference());
   }
   */
-  
   public String[][] getTableArray(String xlFilePath, String sheetName, String tableName) throws Exception{
       String[][] tabArray=null;
       
@@ -77,7 +83,7 @@ public class TestCase3 extends BaseChrome{
           startRow=tableStart.getRow();
           startCol=tableStart.getColumn();
 
-          Cell tableEnd= sheet.findCell(tableName);                
+          Cell tableEnd= sheet.findCell(tableName, startCol+1,startRow+1, 100, 64000,  false);                
 
           endRow=tableEnd.getRow();
           endCol=tableEnd.getColumn();
@@ -93,7 +99,9 @@ public class TestCase3 extends BaseChrome{
               }
           }
       
-
       return(tabArray);
   }
+  
+  
+  
 }

@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationassignment.TestCase1Bonus">
+      <class name="automationassignment.TestCase3">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="step4_CaptureDetailsForDelivery"/>
-          <include name="step5_ReceiveOrderReference"/>
           <include name="openPage"/>
-          <include name="step2_SearchForRestaurantsNearAddress"/>
-          <include name="step3_AddItemsToBasket"/>
+          <include name="closeBrowser"/>
           <include name="step1_EnterAddress"/>
         </methods>
-      </class> <!-- automationassignment.TestCase1Bonus -->
+      </class> <!-- automationassignment.TestCase3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
