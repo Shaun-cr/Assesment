@@ -14,3 +14,4 @@
 8. To install plugins in Eclipse go to HELP and then INSTALL NEW SOFTWARE
 9. Make sure your webdriver is mapped correthly under the Browser Class
 10. To view test results: click on "test-output" folder and open index.html page. Scroll down to under Results and click on "SHOW" next to "passed methods". To view more detail report,please open emailable-report.html (in here you will see the order reference number in step 5)
+11. jxl-2.6.12.jar  must be added to the build path manually of project. look under src/Excell
