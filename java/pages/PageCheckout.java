@@ -45,6 +45,9 @@ public class PageCheckout {
 	@FindBy(how = How.XPATH,using = "//span[@class='cart-sum-price']")
 	private WebElement labelCartTotal;
 	
+	@FindBy(how = How.XPATH,using = "//input[@value='Order and pay']")
+	private WebElement buttonOrderAndPay;
+	
 	@FindBy(how = How.XPATH,using = "//body")
 	private WebElement webElementBody;
 
@@ -105,6 +108,13 @@ public class PageCheckout {
 		//Convert stringPayAmount to integer payAmount
 		int intPayAmount = Integer.parseInt(convertValue);
 		return intPayAmount;
+	}
+
+	public void clickOrderAndPayButton() {
+		webElementBody.sendKeys(Keys.PAGE_DOWN);
+		Browser.ExplicitWait(buttonOrderAndPay);
+		buttonOrderAndPay.click();
+		
 	}
 
 }

@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[The Order Reference Number is: NBZPNP]]>
+    </line>
   </reporter-output>
-  <suite started-at="2019-10-05T21:17:26 SAST" name="Default suite" finished-at="2019-10-05T21:18:12 SAST" duration-ms="45897">
+  <suite started-at="2019-10-06T04:51:04 SAST" name="Default suite" finished-at="2019-10-06T04:52:07 SAST" duration-ms="62930">
     <groups>
     </groups>
-    <test started-at="2019-10-05T21:17:26 SAST" name="Default test" finished-at="2019-10-05T21:18:12 SAST" duration-ms="45897">
+    <test started-at="2019-10-06T04:51:04 SAST" name="Default test" finished-at="2019-10-06T04:52:07 SAST" duration-ms="62930">
       <class name="automationassignment.TestCase1">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase1@2aa3cd93]" started-at="2019-10-05T21:17:26 SAST" name="openPage" finished-at="2019-10-05T21:17:31 SAST" duration-ms="5012" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:51:04 SAST" name="openPage" finished-at="2019-10-06T04:51:12 SAST" duration-ms="8625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.TestCase1@2aa3cd93]" started-at="2019-10-05T21:17:31 SAST" name="step1_EnterAddress" finished-at="2019-10-05T21:17:42 SAST" duration-ms="10931" status="PASS">
+        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:51:12 SAST" name="step1_EnterAddress" finished-at="2019-10-06T04:51:23 SAST" duration-ms="11025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step1_EnterAddress -->
-        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.TestCase1@2aa3cd93]" started-at="2019-10-05T21:17:42 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-05T21:17:56 SAST" depends-on-methods="automationassignment.TestCase1.step1_EnterAddress" duration-ms="14132" status="PASS">
+        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:51:23 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T04:51:37 SAST" depends-on-methods="automationassignment.TestCase1.step1_EnterAddress" duration-ms="13811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
-        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.TestCase1@2aa3cd93]" started-at="2019-10-05T21:17:56 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-05T21:18:07 SAST" depends-on-methods="automationassignment.TestCase1.step2_SearchForRestaurantsNearAddress" duration-ms="10315" status="PASS">
+        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:51:37 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T04:51:45 SAST" depends-on-methods="automationassignment.TestCase1.step2_SearchForRestaurantsNearAddress" duration-ms="8048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_AddItemsToBasket -->
-        <test-method signature="step4_captureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1@2aa3cd93]" started-at="2019-10-05T21:18:07 SAST" name="step4_captureDetailsForDelivery" finished-at="2019-10-05T21:18:12 SAST" depends-on-methods="automationassignment.TestCase1.step3_AddItemsToBasket" duration-ms="5474" status="PASS">
+        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:51:45 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T04:52:00 SAST" depends-on-methods="automationassignment.TestCase1.step3_AddItemsToBasket" duration-ms="15081" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- step4_captureDetailsForDelivery -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase1@2aa3cd93]" started-at="2019-10-05T21:18:12 SAST" name="closeBrowser" finished-at="2019-10-05T21:18:12 SAST" duration-ms="0" status="PASS">
+        </test-method> <!-- step4_CaptureDetailsForDelivery -->
+        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:52:00 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T04:52:07 SAST" depends-on-methods="automationassignment.TestCase1.step4_CaptureDetailsForDelivery" duration-ms="6261" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[The Order Reference Number is: NBZPNP]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- step5_ReceiveOrderReference -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase1@7ea37dbf]" started-at="2019-10-06T04:52:07 SAST" name="closeBrowser" finished-at="2019-10-06T04:52:07 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

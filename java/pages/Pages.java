@@ -30,4 +30,11 @@ public class Pages {
 		return page;
 	}
 
+	public static PageThankYouForYourOrder pageThankYouForYourOrder() {
+		PageThankYouForYourOrder page = new PageThankYouForYourOrder();
+		PageFactory.initElements(Browser.getDriver(), page);
+		return page;
+
+	}
+
 }
