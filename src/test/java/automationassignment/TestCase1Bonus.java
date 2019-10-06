@@ -3,10 +3,11 @@ package automationassignment;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import base.BaseChrome;
+
+import base.BaseFireFox;
 import pages.Pages;
 
-public class TestCase1 extends BaseChrome{
+public class TestCase1Bonus extends BaseFireFox{
 	
   @Test
   public void step1_EnterAddress() {

@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class Base {
+public class BaseChrome {
   
 	 @BeforeClass
      public static void openPage(){

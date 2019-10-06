@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,7 +25,7 @@ public class Browser {
 	}
 
 	public static void Close() {
-		// TODO Auto-generated method stub
+		driver.close();
 		
 	}
 
@@ -42,7 +43,9 @@ public class Browser {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\chromedriver\\chromedriver.exe");
 		WebDriver webDriver = new ChromeDriver(options);
-		return new Browser (webDriver);
+		
+		Browser browserChrome = new Browser (webDriver);
+		return browserChrome;
 	}
 	
 	public static void goToThuisbezorgd() {
@@ -101,10 +104,31 @@ public class Browser {
 		} 
 		catch (Exception e) {
 			System.out.println("ExplicitWait failed on this WebListElement: " + WebListElement); 
-
 		}
 	}
+
+	public static Browser runIE() {
+		String IEDriverPath = "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\iedriverserver\\IEDriverServer3.12.exe";
+		System.setProperty("webdriver.ie.driver",IEDriverPath);
+		DesiredCapabilities dc = new DesiredCapabilities();	
+		dc.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "https://www.thuisbezorgd.nl/en/"); 
+		dc.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true); 
+		WebDriver webDriver = new InternetExplorerDriver(dc);
+		Browser browserIE = new Browser (webDriver);
+		return browserIE;
 		
+	}
+	
+	public static void maximizeBrowser(){
+		driver.manage().window().maximize();	
+	}
+
+	public static Browser runFirefox() {
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\shauncr\\eclipse-workspace\\Assesment\\src\\webdriver\\geckodriver\\geckodriver.exe");
+		WebDriver webDriver = new FirefoxDriver();
+		Browser browserFirefox = new Browser (webDriver);
+		return browserFirefox;
+	}
 		
 
 }
