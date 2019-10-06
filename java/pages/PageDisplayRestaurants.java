@@ -19,6 +19,8 @@ public class PageDisplayRestaurants {
 	@FindBy(how = How.XPATH,using = "//input[@id='irestaurantsearchstring-middle']")
 	private WebElement textboxSearch;
 	
+	@FindBy(how = How.XPATH,using = "//button[@class='topbar__title js-header-location-update show-location']")
+	private WebElement labelHeadingAddress;
 	
 	public boolean isAt() {
 		return GeneralChecks.isWebElementDisplayed(webElementPageBody); 
@@ -32,6 +34,15 @@ public class PageDisplayRestaurants {
 		textboxSearch.sendKeys(RestaurantName);
 		GeneralSelects.selectItemFromWebElementlist(listRestaurants, RestaurantName);
    
+	}
+
+	public boolean isAddressDisplayedCorrect(String confirmedAdress) {
+		boolean check = false;
+		String addressFromLabel = labelHeadingAddress.getText().trim();
+				if (addressFromLabel.contentEquals(confirmedAdress)) {
+					check = true;
+				}
+		return check;
 	}
 	
 }

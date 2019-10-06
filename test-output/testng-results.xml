@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[The Order Reference Number is: UCRVKK]]>
+      <![CDATA[The Order Reference Number is: 9FPVRK]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-10-06T05:57:44 SAST" name="Default suite" finished-at="2019-10-06T05:58:48 SAST" duration-ms="63633">
+  <suite started-at="2019-10-06T07:57:59 SAST" name="Default suite" finished-at="2019-10-06T07:58:56 SAST" duration-ms="56347">
     <groups>
     </groups>
-    <test started-at="2019-10-06T05:57:44 SAST" name="Default test" finished-at="2019-10-06T05:58:48 SAST" duration-ms="63633">
-      <class name="automationassignment.TestCase1Bonus">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:57:44 SAST" name="openPage" finished-at="2019-10-06T05:57:50 SAST" duration-ms="5883" status="PASS">
+    <test started-at="2019-10-06T07:57:59 SAST" name="Default test" finished-at="2019-10-06T07:58:56 SAST" duration-ms="56347">
+      <class name="automationassignment.TestCase2">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:57:59 SAST" name="openPage" finished-at="2019-10-06T07:58:04 SAST" duration-ms="4691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:57:50 SAST" name="step1_EnterAddress" finished-at="2019-10-06T05:57:59 SAST" duration-ms="8616" status="PASS">
+        <test-method signature="step1_EnterAddress()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:58:04 SAST" name="step1_EnterAddress" finished-at="2019-10-06T07:58:15 SAST" duration-ms="10970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step1_EnterAddress -->
-        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:57:59 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T05:58:14 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step1_EnterAddress" duration-ms="14810" status="PASS">
+        <test-method signature="step2_SearchForRestaurantsNearAddress()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:58:15 SAST" name="step2_SearchForRestaurantsNearAddress" finished-at="2019-10-06T07:58:29 SAST" depends-on-methods="automationassignment.TestCase2.step1_EnterAddress" duration-ms="13853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step2_SearchForRestaurantsNearAddress -->
-        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:58:14 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T05:58:22 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step2_SearchForRestaurantsNearAddress" duration-ms="8216" status="PASS">
+        <test-method signature="step3_AddItemsToBasket()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:58:29 SAST" name="step3_AddItemsToBasket" finished-at="2019-10-06T07:58:37 SAST" depends-on-methods="automationassignment.TestCase2.step2_SearchForRestaurantsNearAddress" duration-ms="7998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step3_AddItemsToBasket -->
-        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:58:22 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T05:58:38 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step3_AddItemsToBasket" duration-ms="15721" status="PASS">
+        <test-method signature="step4_CaptureDetailsForDelivery()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:58:37 SAST" name="step4_CaptureDetailsForDelivery" finished-at="2019-10-06T07:58:49 SAST" depends-on-methods="automationassignment.TestCase2.step3_AddItemsToBasket" duration-ms="12492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- step4_CaptureDetailsForDelivery -->
-        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:58:38 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T05:58:44 SAST" depends-on-methods="automationassignment.TestCase1Bonus.step4_CaptureDetailsForDelivery" duration-ms="6200" status="PASS">
+        <test-method signature="step5_ReceiveOrderReference()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:58:49 SAST" name="step5_ReceiveOrderReference" finished-at="2019-10-06T07:58:56 SAST" depends-on-methods="automationassignment.TestCase2.step4_CaptureDetailsForDelivery" duration-ms="6292" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[The Order Reference Number is: UCRVKK]]>
+              <![CDATA[The Order Reference Number is: 9FPVRK]]>
             </line>
           </reporter-output>
         </test-method> <!-- step5_ReceiveOrderReference -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase1Bonus@7ea37dbf]" started-at="2019-10-06T05:58:44 SAST" name="closeBrowser" finished-at="2019-10-06T05:58:48 SAST" duration-ms="4124" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automationassignment.TestCase2@7ea37dbf]" started-at="2019-10-06T07:58:56 SAST" name="closeBrowser" finished-at="2019-10-06T07:58:56 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- automationassignment.TestCase1Bonus -->
+      </class> <!-- automationassignment.TestCase2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

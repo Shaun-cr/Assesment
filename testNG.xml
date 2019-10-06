@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite name="Test-Class Suite" >
+         
+  <test name="TestCases" parallel="classes" thread-count="3">
+	 <classes>
+	   <class name="automationassignment.TestCase1"/>
+	   <class name="automationassignment.TestCase1Bonus"/>
+	 </classes>
+   </test>
+   
+   
+</suite>

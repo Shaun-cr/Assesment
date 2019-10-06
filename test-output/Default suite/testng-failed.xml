@@ -5,13 +5,13 @@
     <classes>
       <class name="automationassignment.TestCase1Bonus">
         <methods>
+          <include name="closeBrowser"/>
           <include name="step4_CaptureDetailsForDelivery"/>
           <include name="step5_ReceiveOrderReference"/>
+          <include name="openPage"/>
           <include name="step2_SearchForRestaurantsNearAddress"/>
-          <include name="closeBrowser"/>
           <include name="step3_AddItemsToBasket"/>
           <include name="step1_EnterAddress"/>
-          <include name="openPage"/>
         </methods>
       </class> <!-- automationassignment.TestCase1Bonus -->
     </classes>

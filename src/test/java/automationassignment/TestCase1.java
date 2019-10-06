@@ -20,11 +20,12 @@ public class TestCase1 extends BaseChrome{
 	  
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isAt(),"Pages.pageOrderFromRestaurants().isAt() - Page not found !");
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isRestaurantsListDisplayed(),"Pages.pageOrderFromRestaurants().isRestaurantsListDisplayed() - Restaurants List looks like it is empty");
+	  Assert.assertTrue(Pages.pageDisplayRestaurants().isAddressDisplayedCorrect("8888-alpha"));
 	 // Pages.pageDisplayRestaurants().searchAndSelectRestaurant("Pan Pizza Man");
 	  Pages.pageDisplayRestaurants().searchAndSelectRestaurant("QA Restaurant Selenium");
 	  
   }
-  
+
   @Test (dependsOnMethods={"step2_SearchForRestaurantsNearAddress"})
   public void step3_AddItemsToBasket() {
 	  

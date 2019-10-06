@@ -12,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.SessionId;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -129,6 +131,13 @@ public class Browser {
 		Browser browserFirefox = new Browser (webDriver);
 		return browserFirefox;
 	}
+
+	public static void getSessionID() {
+		SessionId session = ((RemoteWebDriver) driver).getSessionId();
+		System.out.println("Session id: " + session.toString());
+		
+	}
+
 		
 
 }

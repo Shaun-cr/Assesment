@@ -11,6 +11,7 @@ public class BaseFireFox {
 	 @BeforeClass
      public static void openPage(){
 	 	Browser.runFirefox();
+	 	Browser.getSessionID();
 	 	Browser.maximizeBrowser();
 	 	Browser.goToThuisbezorgd();
 	} 

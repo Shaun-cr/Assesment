@@ -21,6 +21,7 @@ public class TestCase1Bonus extends BaseFireFox{
 	  
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isAt(),"Pages.pageOrderFromRestaurants().isAt() - Page not found !");
 	  Assert.assertTrue(Pages.pageDisplayRestaurants().isRestaurantsListDisplayed(),"Pages.pageOrderFromRestaurants().isRestaurantsListDisplayed() - Restaurants List looks like it is empty");
+	  Assert.assertTrue(Pages.pageDisplayRestaurants().isAddressDisplayedCorrect("8888-alpha"));
 	 // Pages.pageDisplayRestaurants().searchAndSelectRestaurant("Pan Pizza Man");
 	  Pages.pageDisplayRestaurants().searchAndSelectRestaurant("QA Restaurant Selenium");
 	  

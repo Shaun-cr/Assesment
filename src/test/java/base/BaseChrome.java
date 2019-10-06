@@ -11,6 +11,7 @@ public class BaseChrome {
 	 @BeforeClass
      public static void openPage(){
 	 	Browser.runChrome();
+	 	Browser.getSessionID();
 	 	Browser.goToThuisbezorgd();
 	} 
 
